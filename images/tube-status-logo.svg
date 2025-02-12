@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <!-- Background Circle with Gradient -->
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#1a365d;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ee2e24;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <circle cx="100" cy="100" r="90" fill="url(#grad1)" />
+    
+    <!-- Outer Ring with Lighter Stroke -->
+    <circle cx="100" cy="100" r="85" fill="none" stroke="#f2f2f2" stroke-width="3"/>
+    
+    <!-- Underground Roundel with Gradient -->
+    <circle cx="100" cy="100" r="40" fill="url(#grad1)"/>
+    <rect x="30" y="85" width="140" height="30" fill="#ffffff"/>
+    
+    <!-- Live Status Dots with Glowing Effect -->
+    <circle cx="160" cy="40" r="8" fill="#00ff99">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="140" cy="40" r="8" fill="#00ff99">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="40" r="8" fill="#00ff99">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Stylized Train Track with Bold Stroke -->
+    <path d="M30 140 Q100 120 170 140" fill="none" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round"/>
+    <path d="M30 150 Q100 130 170 150" fill="none" stroke="#f2f2f2" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Digital Elements with Modern Font and Color -->
+    <path d="M85 95 L115 95 L115 105 L85 105 Z" fill="#1a365d"/>
+    <text x="100" y="103" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">LIVE</text>
+</svg>
